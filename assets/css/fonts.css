@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Dosis-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dosis'), url('../fonts/dosis/Dosis-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dosis-ExtraBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dosis-ExtraBold'), url('../fonts/dosis/Dosis-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Dosis-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dosis-Bold'), url('../fonts/dosis/Dosis-Bold.woff') format('woff');
+}
