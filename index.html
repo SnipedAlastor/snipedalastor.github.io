@@ -8,8 +8,8 @@
     <title>Hangar Plusik | Zespół Deweloperów</title>
     <meta name="description" content="Hangar Plusik to grupa deweloperów, których zadaniem jest dostarczanie wrażeń z gier!">
     <link rel="icon" href="https://snipedalastor.github.io/assets/img/brand/logo.webp">
-    <link rel="fonts" href="">
-    <link rel="stylesheet" href="">
+    <link rel="fonts" href="https://snipedalastor.github.io/assets/css/fonts.css">
+    <link rel="stylesheet" href="https://snipedalastor.github.io/assets/css/style.css">
     <meta content="Hangar Plusik | Zespół Deweloperów" property="og:title">
     <meta content="Hangar Plusik to grupa deweloperów, których zadaniem jest dostarczanie wrażeń z gier!" property="og:description">
     <meta content="https://hangar.plusik/" property="og:url">
@@ -18,6 +18,22 @@
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    
+    <div id="siteloader" class="bg-default" style="opacity: 0; display: none;">
+        <img src="https://snipedalastor.github.io/assets/img/ui/loading.webp">
+    </div>
+    <div id="image-view" class="gallery-selected">
+        <div id="image-view-bg" onclick="closeImage()"></div>
+        <div id="image-view-src" title="Kliknij, aby zamknąć." src onclick="closeImage()"></div>
+    </div>
+    <nav id="navbar">
+        <div class="container">
+            <div id="navbar-media">
+                <a href="https://snipedalastor.github.io/">
+                    <img alt="Hangar Plusik" src="https://snipedalastor.github.io/assets/img/brand/banner_wide.webp">
+                </a>
+            </div>
+            <div id="nav-options"></div>
+        </div>
+    </nav>
 </body>
 </html>
