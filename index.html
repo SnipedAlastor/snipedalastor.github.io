@@ -74,112 +74,163 @@
                 <br>
                 <br>
                 <div id="news-list" class="flex-row" style="align-items: stretch;">
-                    <div class="card card-default nopadding animations-borderhover" style="width: 420px;">
-                        <div class="card-media cover">
-                            <a href="https://snipedalastor.github.io/">
-                                <img src="" height="240" draggable="false">
-                            </a>
-                        </div>
-                        <div class="card-title">
-                            <h2 class="no-margin text-secondary-light">Ogłoszenie</h2>
-                            <h1 class="no-margin">?</h1>
-                            <h3 class="no-margin">?</h3>
-                            <ul class="list-inline no-margin-top no-margin-bottom">
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">August 10, 2024</h4>
-                                </li>
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">-</h4>
-                                </li>
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">0 Views</h4>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card card-default nopadding animations-borderhover" style="width: 420px;">
-                        <div class="card-media cover">
-                            <a href="https://snipedalastor.github.io/">
-                                <img src="" height="240" draggable="false">
-                            </a>
-                        </div>
-                        <div class="card-title">
-                            <h2 class="no-margin text-secondary-light">Ogłoszenie</h2>
-                            <h1 class="no-margin">?</h1>
-                            <h3 class="no-margin">?</h3>
-                            <ul class="list-inline no-margin-top no-margin-bottom">
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">August 10, 2024</h4>
-                                </li>
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">-</h4>
-                                </li>
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">0 Views</h4>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card card-default nopadding animations-borderhover" style="width: 420px;">
-                        <div class="card-media cover">
-                            <a href="https://snipedalastor.github.io/">
-                                <img src="" height="240" draggable="false">
-                            </a>
-                        </div>
-                        <div class="card-title">
-                            <h2 class="no-margin text-secondary-light">Ogłoszenie</h2>
-                            <h1 class="no-margin">?</h1>
-                            <h3 class="no-margin">?</h3>
-                            <ul class="list-inline no-margin-top no-margin-bottom">
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">August 10, 2024</h4>
-                                </li>
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">-</h4>
-                                </li>
-                                <li>
-                                    <h4 class="no-margin text-secondary-light">0 Views</h4>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                    <img src="https://snipedalastor.github.io/assets/img/ui/loading.webp" alt class="img-responsive6 center-block" draggable="false">
                 </div>
             </div>
         </div>
         <div id="projects" class="section section-md text-center bg-default">
             <div class="container">
-                <img src="https://snipedalastor.github.io/assets/img/ui/texts/projects.webp" alt class="img-responsive5 center-block" draggable="false">
+                <img src="https://snipedalastor.github.io/assets/img/ui/texts/projects.webp" alt class="img-responsive6 center-block" draggable="false">
                 <br>
                 <br>
                 <div id="project-list" class="flex-row">
-                    <div class="card card-default nopadding animations-borderhover" style="width: 360px;">
+                    <img src="https://snipedalastor.github.io/assets/img/ui/loading.webp" alt class="img-responsive6 center-block" draggable="false">
+                </div>
+            </div>
+        </div>
+        <div id="webster" class="section section-md text-center bg-default">
+            <div class="container">
+                <img src="" alt class="img-responsive6 center-block" draggable="false">
+                <br>
+                <br>
+                <img id="webster-image" src="" alt class="img-responsive2 center-block" draggable="false">
+            </div>
+        </div>
+    </page-contents>
+    <div id="site-footer" class="section section-xs text-center bg-default">
+        <div class="container">
+            <ul id="footer-links" class="list-inline">
+                <li>
+                    <a href="" target="_blank" class="text-light">
+                        <span>Oficjalny Discord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="list-inline">
+                        <span>Polityka Prywatności</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="list-inline">
+                        <span>Warunki Świadczenia Usług</span>
+                    </a>
+                </li>
+                <br>
+                <br>
+                <div id="copyright" class="text-secondary-light">
+                    <p class="no-margin">Copyright © 2024 Hangar Plusik</p>
+                </div>
+                <div id="disclaimer1" class="text-secondary-light">
+                    <p class="no-margin">Hangar Plusik 2025, niezarejestrowana firma z siedzibą w Polsce.
+                        Treści i materiały mogą podlegać prawom autorskim, nie należy ich rozpowszechniać, kraść ani kopiować.
+                        kopiować. Prawa autorskie (R)</p>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <!-- Scripts -->
+     <script src="https://snipedalastor.github.io/assets/js/main.js"></script>
+     <script>
+        // News article system.
+        async function latestNews() {
+            // Get the news list element.
+            const newsList = document.getElementById("news-list");
+            // Get the articles info list.
+            const articleInfo = await asyncFetch('https://snipedalastor.github.io/list');
+            // Clear the element.
+            newsList.innerHTML = "";
+            // Generate HTML for each sorted article and append it.
+            for (let index = 0; index < 3; index++) {
+                let article = article = articleInfo[index].article;
+                let properties = articleInfo[index].properties;
+                // Return the finished card.
+                articleListFormatted = `<div class="card card-default nopadding animations-borderhover" style="width: 420px;">
+        <div class="card-media cover">
+            <a href="https://snipedalastor.github.io/article/${article}">
+                <img id="${article}-cover" src="https://snipedalastor.github.io/articles/${article}/banner.webp" height="240" draggable="false">
+            </a>
+        </div>
+        <div class="card-title">
+            <h2 class="no-margin text-secondary-light">${properties.tag}</h2>
+            <h1 class="no-margin">${properties.name}</h1>
+            <h3 class="no-margin">${properties.description}</h3>
+            <ul class="list-inline no-margin-top no-margin-bottom">
+                <li><h4 class="no-margin text-secondary-light">${properties.date}</h4></li>
+                <li><h4 class="no-margin text-secondary-light">-</h4></li>
+                <li><h4 class="no-margin text-secondary-light">${properties.view_count.toLocaleString()} Views</h4></li>
+            </ul>
+        </div>
+    </div>`
+                // Aooebd tge article to the element.
+                newsList.insertAdjacentHTML("beforeend", articleListFormatted);
+            }
+        }
+
+        // Project load system.
+        async function loadProjects() {
+            // Get the project list element.
+            const projectList = document.getElementById("project-list");
+            // List of projects.
+            const projects = {
+                "Cyfrowe Starcie": {
+                    "hasDownloadCount": true,
+                    "tags": [
+                        "ANDROID",
+                        "IOS"
+                    ]
+                }
+            }
+
+            // Get the project info.
+            const projectInfo = await asyncFetch('https://snipedalastor.github.io/info/project/all');
+            // Clear the element.
+            projectList.innerHTML = "";
+            // Loop through each project in the list adding each element.
+            for (let index in projects) {
+                // Lowercase project name.
+                const lowercaseIndex = index.toLowerCase();
+                // Define the tags list.
+                const tagsFormat = projects[index].tags.map(index => {
+                    return `<li><img title="${index.charAt(0).toUpperCase() + index.slice(1)}" src="https://snipedalastor.github.io/img/ui/tags/${index}.webp" alt="" class="badge badge-img center-block" draggable="false"></li>`
+                }).join('');
+                // Get the project version.
+                const projectVersion = (projects[index].hasDownloadCount) ? "Wersja Gry " + projectInfo[index].latestVersion.split("-")[1] : projects[index].version;
+                // Define the downloadCount element.
+                const downloadCount = (projects[index].hasDownloadCount) ? `<li><h3 class="no-margin">${projectInfo[index].downloadCount.total.toLocaleString()} Pobrane</h3></li>` : "";
+                // Define the card format.
+                const cardFormat = `
+                <div class="card card-default no padding animations-borderhover" style="width: 360px;">
                         <div class="card-media cover">
-                            <a href="/creations/">
-                                <img id="" src="" height="420" draggable="false">
+                            <a href="/creations/${lowercaseIndex}"
+                                <img id="${lowercaseIndex}-cover" src="https://snipedalastor.github.io/img/projects/${lowercaseIndex}/tab.webp" height="420" draggable="false">
                             </a>
                         </div>
                         <div class="card-title">
                             <ul class="list-inline">
-                                <li>
-                                    <h3 class="no-margin">Android/IOS</h3>
-                                </li>
-                                <li>
-                                    <h3 class="no-margin">0&nbsp;000&nbsp;000 Pobrań</h3>
-                                </li>
+                                <li><h3 class="no-margin">${projectVersion}</h3></li>
+                                ${downloadCount}
                             </ul>
                             <ul class="list-inline">
-                                <li>
-                                    <img title="Android" src="" alt class="badge badge-img center-block" draggable="false">
-                                </li>
-                                <li>
-                                    <img title="IOS" src="" alt class="badge badge-img center-block" draggable="false">
-                                </li>
+                                ${tagsFormat}
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </page-contents>
+                    </div>`
+                // Apply the project elements.
+                projectList.insertAdjacentHTML("beforeend", cardFormat);
+            }
+        };
+
+        async function websterPic() {
+            // Get a random webster pic.
+            const websterImage = await asyncFetch(`https://snipedalastor.github.io/webster/`);
+            // Replace the image on the webster pic element.
+            document.getElementById("webster-image").src = websterImage.url();
+
+            // Refresh the image.
+            setTimeout(function () {
+                websterPic();
+            }, 5000);
+        }
+     </script>
 </body>
 </html>
