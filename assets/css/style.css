@@ -746,3 +746,97 @@ page-contents {
 }
 
 /* Gallery Styles */
+.gallery img {
+    border-radius: 4px;
+    cursor: pointer;
+}
+.gallery img:hover {
+    animation: border-hover 0.5s forwards;
+}
+#image-view {
+    z-index: 999999;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    transition-property: opacity;
+}
+#image-view-bg {
+    background-color: #000;
+    opacity: 50%;
+    z-index: 999998;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+    transition-property: opacity;
+}
+#image-view-src {
+    z-index: 999999;
+    width: 75vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-property: opacity;
+    cursor: pointer;
+}
+
+/* Dropdown Styles. */
+.dropdown {
+    margin-top: 0px !important;
+    width: 35vw;
+    font-size: 1.17em;
+}
+@media (max-width: 992px) {
+    .dropdown {
+        width: 85vw;
+    } 
+}
+
+.dropdown div.content {
+    background-color: #1a1a1a;
+    margin-top: 0;
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: height 0.2s ease-out;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown h2.title {
+    margin-top: 0px !important;
+    margin-bottom: 0;
+    padding: 8px 35px;
+    background-color: #2b90e2;
+    border: 5px solid #000;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    box-shadow: 
+        inset 4px 4px 0 #16b5ff
+        inset -4px -4px 0 #0064a6
+        0 0px 0px rgba(0, 0, 0, 0.3);
+}
+.dropdown h2.title:hover {
+    border: 5px solid #FFF;
+}
+
+/* UI Styles. */
+.ui-hangar {
+    color: white !important;
+    background-color: #2b90e2;
+    box-shadow: 
+        inset 4px 4px 0 #16b5ff
+        inset -4px -4px 0 #0064a6
+        0 0px 0px rgba(0, 0, 0, 0.3);
+}
+.ui-github {
+    color: white !important;
+    background-color: #161b22 !important;
+    box-shadow:
+        inset 4px 4px 0 #3a3e43,
+        inset -4px -4px 0 #0d1117,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
