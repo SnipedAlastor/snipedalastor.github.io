@@ -22,13 +22,13 @@ h4 {
 }
 
 a {
-    color: #0091d4;
+    color: #8200d4;
     font-family: Dosis-ExtraBold;
     font-weight: unset;
     text-decoration: none;
 }
 
-p { 
+p {
     color: white;
     font-family: Dosis-Regular;
     font-weight: unset;
@@ -119,19 +119,19 @@ page-contents {
     #navbar {
         min-height: 32px;
     }
-    
+
     #navbar-media {
-        padding: 0px;
+        padding: 0;
         margin-left: -15px;
         display: none;
     }
-    
+
     #nav-options {
         padding: 0px 15px;
         font-size: 17px;
         float: none !important;
         width: 100%;
-        margin: -15px;
+        margin: -15px
     }
 
     #nav-options ul {
@@ -150,42 +150,42 @@ page-contents {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     position: relative;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .section.section-md {
     padding-top: 115px;
-    padding-bottom: 72px;
+    padding-bottom: 72px
 }
 
 @media (min-width: 992px) {
     .section.section-md {
         padding-top: 96px;
-        padding-bottom: 96px;
+        padding-bottom: 96px
     }
 }
 
 .section.section-lg {
     padding-top: 72px;
-    padding-bottom: 72px;
+    padding-bottom: 72px
 }
 
 @media (min-width: 992px) {
-    .section.section-md {
+    .section.section-lg {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 120px
     }
 }
 
 .section.section-sm {
     padding-top: 72px;
-    padding-bottom: 72px;
+    padding-bottom: 72px
 }
 
 @media (min-width: 992px) {
     .section.section-sm {
         padding-top: 72px;
-        padding-bottom: 72px;
+        padding-bottom: 72px
     }
 }
 
@@ -206,24 +206,24 @@ page-contents {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px
 }
 
 @media (min-width: 768px) {
     .container {
-        width: 750px;
+        width: 750px
     }
 }
 
 @media (min-width: 992px) {
     .container {
-        width: 970px;
+        width: 970px
     }
 }
 
 @media (min-width: 1200px) {
     .container {
-        width: 1170px;
+        width: 1170px
     }
 }
 
@@ -311,20 +311,99 @@ page-contents {
 
 /* Background colors. */
 .bg-default {
-    background-color: #111111 !important;
+    background-color: #111111 !important
 }
-
 .bg-default-light {
     background-color: #1a1a1a !important;
 }
 .bg-stars {
-    background-image: url('https://snipedalastor.github.io/assets/img/ui/background.webp') !important;
+    background-image: url('https://cdn.lunareclipse.studio/img/ui/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
+}
+.bg-from-the-fog {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/from-the-fog/background.webp') !important;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position-y: center;
 }
-/* Background projects to add later. */
+.bg-feathery-messengers {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/feathery-messengers/background.webp?v=2') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-eternal-pets {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/eternal-pets/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-two-moons {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/two-moons/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-astras-amazing-foxes {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/astras-amazing-foxes/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-fancy-foliage {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/fancy-foliage/background.webp?v=2') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-eyes-in-the-sky {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/eyes-in-the-sky/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-cleaner-creepers {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/cleaner-creepers/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-mystery-manor {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/mystery-manor/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+.bg-starlight-skinapi {
+    background-image: url('https://cdn.lunareclipse.studio/img/projects/starlight-skinapi/background.webp') !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: center;
+}
+
 
 /* Text style tags. */
 .text-center {
@@ -333,6 +412,7 @@ page-contents {
 .text-left {
     text-align: left;
 }
+
 .text-large {
     font-size: large;
 }
@@ -601,8 +681,8 @@ page-contents {
     }
 
     100% {
-        outline: #1a65ac solid 5px;
-        box-shadow: 0 0 10px 5px #1a65ac;
+        outline: #741aac solid 5px;
+        box-shadow: 0 0 10px 5px #741aac;
         transform: translate(0px, 0px);
     }
 }
@@ -614,16 +694,16 @@ page-contents {
 /* Button styles. */
 .btn {
     padding: 8px 35px;
-    background-color: #2b90e2;
+    background-color: #8A2BE2;
     border: 5px solid #000;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    box-shadow: 
-        inset 4px 4px 0 #16b5ff
-        inset -4px -4px 0 #0064a6
+    box-shadow:
+        inset 4px 4px 0 #b816ff,
+        inset -4px -4px 0 #4e00a6,
         0 0px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -809,16 +889,16 @@ page-contents {
     margin-top: 0px !important;
     margin-bottom: 0;
     padding: 8px 35px;
-    background-color: #2b90e2;
+    background-color: #8A2BE2;
     border: 5px solid #000;
     color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    box-shadow: 
-        inset 4px 4px 0 #16b5ff
-        inset -4px -4px 0 #0064a6
+    box-shadow:
+        inset 4px 4px 0 #b816ff,
+        inset -4px -4px 0 #4e00a6,
         0 0px 0px rgba(0, 0, 0, 0.3);
 }
 .dropdown h2.title:hover {
@@ -826,13 +906,13 @@ page-contents {
 }
 
 /* UI Styles. */
-.ui-hangar {
+.ui-lunar {
     color: white !important;
-    background-color: #2b90e2;
-    box-shadow: 
-        inset 4px 4px 0 #16b5ff
-        inset -4px -4px 0 #0064a6
-        0 0px 0px rgba(0, 0, 0, 0.3);
+    background-color: #8A2BE2 !important;
+    box-shadow:
+        inset 4px 4px 0 #b816ff,
+        inset -4px -4px 0 #4e00a6,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
 .ui-github {
     color: white !important;
@@ -840,5 +920,77 @@ page-contents {
     box-shadow:
         inset 4px 4px 0 #3a3e43,
         inset -4px -4px 0 #0d1117,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-from-the-fog {
+    color: black !important;
+    background-color: #00afc0 !important;
+    box-shadow:
+        inset 4px 4px 0 #91ebf6,
+        inset -4px -4px 0 #00466c,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-feathery-messengers {
+    color: white !important;
+    background-color: #644631 !important ;
+    box-shadow:
+        inset 4px 4px 0 #855d3c,
+        inset -4px -4px 0 #483224,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-eternal-pets {
+    color: black !important;
+    background-color: #60f5fa !important ;
+    box-shadow:
+        inset 4px 4px 0 #dffdfe,
+        inset -4px -4px 0 #018bac,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-two-moons {
+    color: white !important;
+    background-color: #8A2BE2 !important;
+    box-shadow:
+        inset 4px 4px 0 #b816ff,
+        inset -4px -4px 0 #4e00a6,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-astras-amazing-foxes {
+    color: white !important;
+    background-color: #f58f74 !important;
+    box-shadow:
+        inset 4px 4px 0 #ffb984,
+        inset -4px -4px 0 #e85c63,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-fancy-foliage {
+    color: white !important;
+    background-color: #2b702a !important;
+    box-shadow:
+        inset 4px 4px 0 #4d961d,
+        inset -4px -4px 0 #01490b,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-eyes-in-the-sky {
+    color: white !important;
+    background-color: #c12222 !important;
+    box-shadow:
+        inset 4px 4px 0 #e53630,
+        inset -4px -4px 0 #90162e,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-cleaner-creepers {
+    color: white !important;
+    background-color: #499337 !important;
+    box-shadow:
+        inset 4px 4px 0 #36b129,
+        inset -4px -4px 0 #0d682d,
+        0 0px 0px rgba(0, 0, 0, 0.3) !important;
+}
+.ui-mystery-manor {
+    color: white !important;
+    background-color: #c12222 !important;
+    box-shadow:
+        inset 4px 4px 0 #e53630,
+        inset -4px -4px 0 #90162e,
         0 0px 0px rgba(0, 0, 0, 0.3) !important;
 }
