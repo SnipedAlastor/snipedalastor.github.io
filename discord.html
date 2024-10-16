@@ -7,18 +7,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Discord | Hangar Plusik</title>
         <meta name="description" content="Dołącz do naszej prężnie rozwijającej się społeczności, aby uzyskać pomoc w instalacji, wsparcie techniczne i być na bieżąco z
-        najnowszymi osiągnięciami!">
+                najnowszymi osiągnięciami!">
         <link rel="icon" href="https://snipedalastor.github.io/assets/img/brand/logo.webp">
         <link id="fonts" rel="stylesheet" href="https://snipedalastor.github.io/assets/css/fonts.css">
         <link id="theme" rel="stylesheet" href="https://snipedalastor.github.io/assets/css/style.css">
 
         <meta content="Discord | Hangar Plusik" property="og:title">
         <meta content="Dołącz do naszej prężnie rozwijającej się społeczności, aby uzyskać pomoc w instalacji, wsparcie techniczne i być na bieżąco z
-        najnowszymi osiągnięciami!" property="og:description">
+                najnowszymi osiągnięciami!" property="og:description">
         <meta content="https://hangar.plusik/" property="og:url">
         <meta content="https://snipedalastor.github.io/assets/img/brand/banner.webp" property="og:image">
         <meta content="#0091d4" data-react-helmet="true" name="theme-color">
         <meta name="twitter:card" content="summary_large_image">
+
+            <style>
+                #questions-warning {
+                    position: fixed;
+                    z-index: 99999;
+                    width: 100%;
+                    height: 100%;
+
+                    transition: all 0.5s ease-in-out;
+                    transition-property: opacity;
+                }
+
+                .disabled {
+                    filter: contrast(0.5) brightness(0.5);
+                    pointer-events: none;
+                }
+            </style>
     </head>
 
     <body>
@@ -49,7 +66,33 @@
             </div>
         </nav>
         <page-contents>
-            
+        <div id="questions-warning" class="text-center bg-default" style="display: none; opacity: 0;">
+            <div class="centered-block">
+                <h1 class="no-margin-bottom" style="color: red; font-size: 80px;">UWAGA!</h1>
+                <p class="no-margin-top" style="font-size: 2vh;">Jeśli jesteś tutaj, aby zadać pytanie, przeczytaj stronę tworzenia
+                    strony projektu
+                    znajdującą się <a target="_blank" href="https://snipedalastor.github.io/#projects">TUTAJ</a>przed zadaniem nowego
+                    pytanie. Jeśli na stronie projektu nie ma odpowiedzi na Twoje pytanie, zadawaj je wyłącznie na kanale <span style="color: #0091d4; font-weight: bold;">#PYTANIA</span>.
+                </p>
+                <a id="accept-button" class="btn ui-hangar text-light disabled">Zgadzam się.</a>
+            </div>
+        </div>
+        <div class="section section-lg text-center bg-stars">
+            <div class="container">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="flex-column text-center card card-default-transparent" style="padding-top: 25px; padding-bottom: 25px;">
+                    <img class="img-responsive2" draggable="false" src="https://snipedalastor.github.io/assets/img/ui/texts/discord.webp">
+                </div>
+            </div>
+        </div>
         </page-contents>
     </body>
 </html>
