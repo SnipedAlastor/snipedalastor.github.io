@@ -90,9 +90,100 @@
                 <br>
                 <div class="flex-column text-center card card-default-transparent" style="padding-top: 25px; padding-bottom: 25px;">
                     <img class="img-responsive2" draggable="false" src="https://snipedalastor.github.io/assets/img/ui/texts/discord.webp">
+                    <p class="text-large">Dołącz do naszej prężnie rozwijającej się społeczności, aby uzyskać pomoc w instalacji, wsparcie techniczne i
+                        być na bieżąco z najnowszymi osiągnięciami. Spotkaj się z innymi graczami i podziel się swoimi przemyśleniami na temat
+                        gry. Odkryjmy razem świat Minecrafta i uczyńmy go jeszcze bardziej ekscytującym!</p>
+                    <a onclick="displayQuestionsPrompt()" class="btn ui-hangar text-light">Dołącz do Discorda!</a>
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
             </div>
         </div>
-        </page-contents>
+</page-contents>
+    <div id="site-footer" class="section section-xs text-center bg-default">
+        <div class="container">
+            <ul id="footer-links" class="list-inline">
+                <li>
+                    <a href="" target="_blank" class="text-light">
+                        <span>Oficjalny Discord</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="text-light">
+                        <span>Polityka Prywatności</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="" target="_blank" class="text-light">
+                        <span>Warunki Świadczenia Usług</span>
+                    </a>
+                </li>
+                <br><br>
+                <div id="copyright" class="text-secondary-light">
+                    <p class="no-margin">Copyright © 2024 Hangar Plusik</p>
+                </div>
+                <div id="disclaimer1" class="text-secondary-light">
+                    <p class="no-margin">Hangar Plusik 2025, niezarejestrowana firma z siedzibą w Polsce.
+                        Treści i materiały mogą podlegać prawom autorskim, nie należy ich rozpowszechniać, kraść ani kopiować.
+                        Prawa autorskie (R)</p>
+                </div>
+        </ul></div>
+    </div>
+
+    <!-- Scripts -->
+     <script src="https://snipedalastor.github.io/assets/js/main.js"></script>
+
+
+        <script>
+            // Play the clip of AI reading the audio.
+            const audio = new Audio(
+                "https://snipedalastor.github.io/assets/audio/questions.mp3"
+            );
+
+            // Update the time.
+            let time = setInterval(function () {
+                updateTime(parseInt(audio.currentTime));
+            }, 1000);
+            // Questions prompt
+            function displayQuestionsPrompt() {
+                // Play the clip of AI reading the audio.
+                audio.volume = 1; // volume between 0 and 1
+                audio.loop = false;
+                audio.onended = allowButtonPressing;
+                audio.play();
+
+                // Get the questions element id.
+                const questionsElement = document.getElementById("questions-warning")
+                // Set the display to flex.
+                questionsElement.style.display = "block";
+                setTimeout(function () {
+                    questionsElement.style.opacity = "10";
+                }, 100);
+            }
+
+            // Define the accept button.
+            let acceptButton = document.getElementById("accept-button")
+            function allowButtonPressing() {
+                // Make the button clickable.
+                acceptButton.classList.remove("disabled");
+                // Stop the time interval.
+                clearInterval(time);
+                // Set the acceptText to the value we want.
+                acceptButton.innerText = "Zgadzam się.";
+                // Set the link of the discord on the button.
+                acceptButton.href = "https://discord.gg/"
+            }
+
+            function updateTime(time) {
+                let fullTime = 27;
+                // Set the acceptText to the time value.
+                acceptButton.innerText = "Proszę czekać | " + (fullTime - time);
+                console.log(time)
+            }
+        </script>
     </body>
 </html>
