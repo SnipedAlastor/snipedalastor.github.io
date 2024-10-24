@@ -134,18 +134,18 @@
      <script>
         // News article system.
         async function latestNews() {
-            // Get the news list element.
-            const newsList = document.getElementById("news-list");
-            // Get the articles info list.
-            const articleInfo = await asyncFetch('https://snipedalastor.github.io/list');
-            // Clear the element.
-            newsList.innerHTML = "";
-            // Generate HTML for each sorted article and append it.
-            for (let index = 0; index < 3; index++) {
-                let article = articleInfo[index].article;
-                let properties = articleInfo[index].properties;
-                // Return the finished card.
-                articleListFormatted = `<div class="card card-default nopadding animations-borderhover" style="width: 420px;">
+                // Get the news list element.
+                const newsList = document.getElementById("news-list");
+                // Get the articles info list.
+                const articleInfo = await asyncFetch(`https://snipedalastor.github.io/list`);
+                // Clear the element.
+                newsList.innerHTML = "";
+                // Generate HTML for each sorted article and append it.
+                for (let index = 0; index < 3; index++) {
+                    let article = articleInfo[index].article;
+                    let properties = articleInfo[index].properties;
+                    // Return the finished card.
+                    articleListFormatted = `<div class="card card-default nopadding animations-borderhover" style="width: 420px;">
         <div class="card-media cover">
             <a href="https://snipedalastor.github.io/article/${article}">
                 <img id="${article}-cover" src="https://snipedalastor.github.io/articles/${article}/banner.webp" height="240" draggable="false">
@@ -162,10 +162,10 @@
             </ul>
         </div>
     </div>`
-                // Aooebd tge article to the element.
-                newsList.insertAdjacentHTML("beforeend", articleListFormatted);
+                    // Append the article to the element.
+                    newsList.insertAdjacentHTML("beforeend", articleListFormatted);
+                }
             }
-        }
 
         // Project load system.
         async function loadProjects() {
