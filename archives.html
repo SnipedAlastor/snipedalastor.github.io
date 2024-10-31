@@ -1,15 +1,13 @@
-<!DOCTYPE html>
-<html lang="pl">
-    <head>
+<!DOCTYPE html><html lang="pl"><head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie-edge">
         <meta name="keywords" content="wopr,hangar,gry,hangarplusik,iława,iławski,wodne,projekty">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Hangar Plusik |  Zespół Deweloperów</title>
         <meta name="description" content="Hangar Plusik to grupa deweloperów, których zadaniem jest dostarczanie wrażeń z gier!">
-        <link rel="icon" href="https://snipedalastor.github.io/assets/img/brand/logo.webp">
-        <link id="fonts" rel="stylesheet" href="https://snipedalastor.github.io/assets/css/fonts.css">
-        <link id="theme" rel="stylesheet" href="https://snipedalastor.github.io/assets/css/style.css">
+        <link rel="icon" href="https://snipedalastor.github.io/assets/img/brand/logo.webp?imageSize=32">
+        <link id="fonts" rel="stylesheet" href="https://snipedalastor.github.io/assets/css/fonts.css?v=2">
+        <link id="theme" rel="stylesheet" href="https://snipedalastor.github.io/assets/css/style.css?v=6">
 
         <meta content="Hangar Plusik |  Zespół Deweloperów" property="og:title">
         <meta content="Hangar Plusik to grupa deweloperów, których zadaniem jest dostarczanie wrażeń z gier!" property="og:description">
@@ -18,3 +16,104 @@
         <meta content="#0091d4" data-react-helmet="true" name="theme-color">
         <meta name="twitter:card" content="summary_large_image">
     </head>
+
+    <body>
+        <div id="site-loader" class="bg-default">
+            <img src="https://snipedalastor.github.io/assets/img/ui/loading.webp">
+        </div>
+        <div id="image-view" class="gallery-selected">
+            <div id="image-view-bg" onclick="closeImage()"></div>
+            <div id="image-view-src" title="Kliknij, aby zamknąć." src onclick="closeImage()"></div>
+        </div>
+        <nav id="navbar">
+            <div class="container">
+                <div id="navbar-media">
+                    <a href="https://snipedalastor.github.io/">
+                        <img alt="Hangar Plusik" src="https://snipedalastor.github.io/assets/img/brand/banner_wide.webp?imageSize=400">
+                    </a>
+                </div>
+                <div id="nav-options">
+                    <ul class="list-inline">
+                        <li><a href="https://snipedalastor.github.io/" class="text-light">Home</a></li>
+                        <li><a href="https://snipedalastor.github.io/discord" class="text-light">Discord</a></li>
+                        <li><a href="https://snipedalastor.github.io/news" class="text-light">Wiadomości</a></li>
+                        <li><a href="https://snipedalastor.github.io/updates" class="text-light">Aktualizacje</a></li>
+                        <li><a href="https://snipedalastor.github.io/archives" class="text-light">Archiwa</a></li>
+                        <li><a href="https://snipedalastor.github.io/about-us" class="text-light">Informacje</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <page-contents>
+            <div id="projects" class="section section-md text-center bg-default">
+                <div class="container">
+                    <img src="https://snipedalastor.github.io/assets/img/ui/texts/archives.webp?imageSize=600" alt="" class="img-responsive6 center-block" draggable="false">
+                    <br>
+                    <br>
+                    <div id="project-list" class="flex-row"></div>
+                </div>
+            </div>
+        </page-contents>
+        <div id="site-footer" class="section section-xs text-center bg-default">
+            <div class="container">
+                <ul id="footer-links" class="list-inline">
+                    <li>
+                        <a href="https://snipedalastor.github.io/discord" target="_blank" class="text-light">
+                            <span>Oficjalny Discord</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://snipedalastor.github.io/docs/privacy-policy" target="_blank" class="text-light">
+                            <span>Polityka Prywatności</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://snipedalastor.github.io/docs/terms-of-service" target="_blank" class="text-light">
+                            <span>Warunki Świadczenia Usług</span>
+                        </a>
+                    </li>
+                    <br>
+                    <br>
+                    <div id="copyright" class="text-secondary-light">
+                        <p class="no-margin">Copyright © 2024 Hangar Plusik</p>
+                    </div>
+                    <div id="disclaimer1" class="text-secondary-light">
+                        <p class="no-margin">Hangar Plusik 2025, niezarejestrowana firma z siedzibą w Polsce.
+                            Treści i materiały mogą podlegać prawom autorskim, nie należy ich rozpowszechniać, kraść ani kopiować.
+                            Prawa autorskie (R)</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+         <script src="https://snipedalastor.github.io/assets/js/main.js?v=3"></script>
+         <script>
+             // Get the project list element.
+             const projectList = document.getElementById("project-list");
+             // List of projects.
+             const projects = {
+                 "Aqua Summertime": {
+                     "version": "0.0.1",
+                     "tags": [
+                         "PC",
+                         "ANDROID",
+                         "IOS"
+                     ]
+                 },
+             }
+             // Loop through each project in the list adding each element.
+             for (let index in projects) {
+                // Lowercase project name.
+                const lowercaseIndex = index.toLowerCase();
+                // Define the tags list.
+                const tagsFormat = projects[index].tags.map(index => {
+                    return `<li><img title="${index.charAt(0).toUpperCase() + index.slice(1)}" src="https://snipedalastor.github.io/assets/img/ui/tags/${index}.webp?imageSize=64" alt="" class="badge badge-img center-block" draggable="false"></li>`
+                }).join('');
+                // Define the card format.
+                const cardFormat = `
+                    <div class="card card-default nopadding animations-borderhover" style="width: 360px;">
+                            <div`
+             }
+         </script>
+    </body>
