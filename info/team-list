@@ -1,0 +1,41 @@
+{
+    "team": {
+        "Bret06": {
+            "onTeam": true,
+            "roles": [
+                "Director",
+                "Developer",
+                "Artist",
+                "Builder",
+                "Web Design"
+            ],
+            "displayName": "Bret06",
+            "discordUsername": "Bret06",
+            "minecraftUsername": "753dd908-8e20-41d9-98d2-1e1d57a576ac",
+            "skinAPIPose": "dungeons",
+            "socials": [
+                "https://www.youtube.com/Bret06",
+                "https://twitter.com/Bret06_Official",
+                "https://github.com/Bret06",
+                "https://www.bret06.net/"
+            ]
+        },
+        "AstraPlays": {
+            "onTeam": true,
+            "roles": [
+                "Director",
+                "Builder",
+                "Artist"
+            ],
+            "displayName": "AstraPlays",
+            "discordUsername": "AstraPlays#3619",
+            "minecraftUsername": "9e0b27539e2a408e953af95460680be8",
+            "skinAPIPose": "relaxing",
+            "socials": [
+                "https://www.youtube.com/@astraplayz",
+                "https://twitter.com/NSapphirelake",
+                "https://www.tiktok.com/@astra_.plays"
+            ]
+        }
+    }
+}
