@@ -113,7 +113,22 @@
                 // Define the card format.
                 const cardFormat = `
                     <div class="card card-default nopadding animations-borderhover" style="width: 360px;">
-                            <div`
+                            <div class="card-media cover">
+                                <a href="/archives/${lowercaseIndex}">
+                                    <img id="${lowercaseIndex}-cover" src="https://snipedalastor.github.io/assets/img/archives/${lowercaseIndex}/tab.webp?imageSize=460&v=2" height="420" draggable="false">
+                                </a>
+                            </div>
+                            <dive class="card-title">
+                                <ul class="list-inline">
+                                    <li><h3 class="no-margin">Version ${projects[index].version}</h3></li>
+                                </ul>
+                                <ul class="list-inline">
+                                    ${tagsFormat}
+                                </ul>
+                            </div>
+                        </div>`
+                // Apply the project elements.
+                projectList.insertAdjacentHTML("beforeend", cardFormat);
              }
          </script>
-    </body>
+    </body></html>
