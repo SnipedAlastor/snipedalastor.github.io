@@ -3,7 +3,6 @@ window.onload = function () {
     loadSite();
     if (typeof latestNews === "function") latestNews();
     if (typeof loadProjects === "function") loadProjects();
-    if (typeof websterPic === "function") websterPic();
 
     // Download system.
     if (typeof startDownload === "function") startDownload();
