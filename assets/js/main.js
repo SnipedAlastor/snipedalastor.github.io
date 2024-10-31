@@ -46,7 +46,7 @@ async function teamList(listElement, listUrl, onTeamReact) {
     for (let team in userList) {
         for (let index in userList[team]) {
             // Define the icon.
-            const cardIcon = (userList[team][index].iconUrl) ? userList[team][index].iconUrl : `https://snipedalastor.github.io/render/${userList[team][index].skinAPIPose}/${userList[team][index].minecraftUsername}/bust?borderHighlight=true&borderHighlightRadius=5`
+            const cardIcon = (userList[team][index].iconUrl) ? userList[team][index].iconUrl : `https://snipedalastor.github.io/render/${userList[team][index].skinAPIPose}/${userList[team][index].minecraftUsername}/bust.webp?borderHighlight=true&borderHighlightRadius=5`
             // Define the social links.
             const cardSocials = userList[team][index].socials.map(social => {
                 return `<li class="no-padding"><a href="${social}" target="_blank"><img src="https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${social}&size=256" alt="" class="badge badge-img center-block" draggable="false"></a></li>`
