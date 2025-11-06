@@ -8,58 +8,67 @@
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <!-- Logo -->
-            <div class="nav-logo">
-                <a href="index.html" class="logo-link" id="logoLink">
-                    <span class="logo-text">SS</span>
-                </a>
-            </div>
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span id="menuIcon">☰</span>
+        </button>
 
-            <!-- Navigation Links -->
-            <ul class="nav-menu">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link" id="gamesToggle">
-                        <span class="link-text">GAMES</span> 
-                        <span class="arrow" id="gamesArrow">▼</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <span class="link-text">NEWSWIRE</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <span class="link-text">VIDEOS</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <span class="link-text">DOWNLOADS</span>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">
-                        <span class="link-text">STORE</span>
-                        <span class="arrow">↗</span>
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">
-                        <span class="link-text">SUPPORT</span>
-                        <span class="arrow">↗</span>
-                    </a>
-                </li>
-            </ul>
-
-            <!-- Right Side Actions-->
-            <div class="nav-actions">
-                <a href="#" class="btn-launcher">Get Launcher</a>
-            </div>
+        <!-- Logo -->
+        <div class="nav-logo">
+            <a href="index.html" class="logo-link" id="logoLink">
+                <span class="logo-text">SS</span>
+            </a>
         </div>
-    </nav>
+
+        <!-- Navigation Links -->
+        <ul class="nav-menu" id="navMenu">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link" id="gamesToggle">
+                    <span class="link-text">GAMES</span> 
+                    <span class="arrow" id="gamesArrow">▼</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="link-text">NEWSWIRE</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="link-text">VIDEOS</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="link-text">DOWNLOADS</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <span class="link-text">STORE</span>
+                    <span class="arrow">↗</span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <span class="link-text">SUPPORT</span>
+                    <span class="arrow">↗</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Right Side Actions-->
+        <div class="nav-actions">
+            <a href="#" class="btn-launcher">Get Launcher</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
 
     <!-- Featured Games Dropdown -->
     <div class="featured-dropdown" id="featuredDropdown">

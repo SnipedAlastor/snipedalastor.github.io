@@ -70,3 +70,42 @@ logoLink.addEventListener('mouseleave', () => {
         }
     }, 50);
 });
+
+// === MOBILE MENU TOGGLE ===
+const menuToggle = document.getElementById('menuToggle');
+const menuIcon = document.getElementById('menuIcon');
+const navMenu = document.getElementById('navMenu');
+const mobileOverlay = document.getElementById('mobileOverlay');
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        mobileOverlay.classList.toggle('active');
+        
+        // Change icon
+        if (navMenu.classList.contains('active')) {
+            menuIcon.textContent = '✕';
+        } else {
+            menuIcon.textContent = '☰';
+        }
+    });
+
+    // Close menu when clicking overlay
+    mobileOverlay.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        menuIcon.textContent = '☰';
+    });
+
+    // Close menu when clicking a link (optional)
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                menuIcon.textContent = '☰';
+            }
+        });
+    });
+}
