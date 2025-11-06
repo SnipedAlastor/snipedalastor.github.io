@@ -112,7 +112,7 @@ gamesToggle.addEventListener('click', (e) => {
 // Load featured games from JSON
 async function loadFeaturedGames() {
     try {
-        const response = await fetch('games.json');
+        const response = await fetch('database/games.json');
         const data = await response.json();
         const games = data.featuredGames.slice(0, 5); // Get max 5 games
         
