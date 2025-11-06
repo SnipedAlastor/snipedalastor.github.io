@@ -1,0 +1,34 @@
+{
+  "featuredGames": [
+    {
+      "id": 1,
+      "title": "Grand Theft Auto VI",
+      "image": "assets/images/games/gta6.jpg",
+      "link": "games/gta6.html"
+    },
+    {
+      "id": 2,
+      "title": "Grand Theft Auto V",
+      "image": "assets/images/games/gta5.jpg",
+      "link": "games/gta5.html"
+    },
+    {
+      "id": 3,
+      "title": "Grand Theft Auto Online",
+      "image": "assets/images/games/gtao.jpg",
+      "link": "games/gtao.html"
+    },
+    {
+      "id": 4,
+      "title": "Red Dead Redemption 2",
+      "image": "assets/images/games/rdr2.jpg",
+      "link": "games/rdr2.html"
+    },
+    {
+      "id": 5,
+      "title": "Red Dead Redemption",
+      "image": "assets/images/games/rdr.jpg",
+      "link": "games/rdr.html"
+    }
+  ]
+}

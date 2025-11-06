@@ -8,53 +8,105 @@
 </head>
 <body>
     <!-- Navigation bar -->
-     <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
             <!-- Logo -->
-             <div class="nav-logo">
-                <a href="index.html"><span class="logo">SS</span></a>
-             </div>
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link" id="logoLink">
+                    <span class="logo-text">SS</span>
+                </a>
+            </div>
 
-             <!-- Navigation Links -->
-              <ul class="nav-menu">
+            <!-- Navigation Links -->
+            <ul class="nav-menu">
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">GAMES <span class="arrow">▼</span></a>
+                    <a href="#" class="nav-link" id="gamesToggle">
+                        <span class="link-text">GAMES</span> 
+                        <span class="arrow" id="gamesArrow">▼</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">NEWSWIRE</a>
+                    <a href="#" class="nav-link">
+                        <span class="link-text">NEWSWIRE</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">VIDEOS</a>
+                    <a href="#" class="nav-link">
+                        <span class="link-text">VIDEOS</span>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">DOWNLOADS</a>
+                    <a href="#" class="nav-link">
+                        <span class="link-text">DOWNLOADS</span>
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">STORE <span class="arrow">▼</span></a>
+                    <a href="#" class="nav-link">
+                        <span class="link-text">STORE</span>
+                        <span class="arrow">↗</span>
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">SUPPORT <span class="arrow">▼</span></a>
+                    <a href="#" class="nav-link">
+                        <span class="link-text">SUPPORT</span>
+                        <span class="arrow">↗</span>
+                    </a>
                 </li>
             </ul>
 
             <!-- Right Side Actions-->
-             <div class="nav-actions">
+            <div class="nav-actions">
                 <button class="btn-launcher">Get Launcher</button>
                 <button class="icon-btn search-btn">
-                    <svg width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <circle cx="11" cy="11" r="8"></circle>
                         <path d="m21 21-4.35-4.35"></path>
                     </svg>
                 </button>
-             </div>
+            </div>
         </div>
-     </nav>
+    </nav>
 
-     <!-- Hero Section -->
-     <section class="hero">
-        
-     </section>
+    <!-- Featured Games Dropdown -->
+    <div class="featured-dropdown" id="featuredDropdown">
+        <div class="featured-container">
+            <div class="featured-header">
+                <h2>Featured Games</h2>
+                <a href="games.html" class="view-all-btn">
+                    View All
+                    <span class="arrow-right">→</span>
+                </a>
+            </div>
+            <div class="featured-games-grid" id="featuredGamesGrid">
+                <!-- Games will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
 
-     <script src="assets/js/script.js"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="game-logo">
+                <img src="" alt="Game Logo" style="width: 200px;">
+            </div>
+            <h2 class="hero-subtitle">BAROTRAUMATIC</h2>
+            <h1 class="hero-title">Trailer</h1>
+            <div class="hero-buttons">
+                <button class="btn-primary">▶ Watch Trailer</button>
+                <button class="btn-secondary">Explore The Game</button>
+            </div>
+        </div>
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+            <button class="carousel-pause">||</button>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
