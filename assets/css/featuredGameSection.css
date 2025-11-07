@@ -1,0 +1,386 @@
+/* === FEATURED GAME SECTION === */
+.featured-game-section {
+    background: #000;
+    padding: 80px 0;
+}
+
+.featured-game-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* === VIDEO PLAYER === */
+.featured-video-wrapper {
+    margin-bottom: 60px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.featured-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video Overlay (poster when paused) */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.overlay-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Game Logo Overlay */
+.video-logo-overlay {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.game-logo {
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.8));
+}
+
+/* Play/Pause Button */
+.video-play-pause {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    transition: all 0.3s ease;
+}
+
+.video-play-pause:hover {
+    background: #fff;
+    transform: scale(1.1);
+}
+
+.play-icon, .pause-icon {
+    font-size: 24px;
+    color: #000;
+}
+
+/* Video Description */
+.video-description {
+    text-align: left;
+}
+
+.video-description h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.video-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+.video-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-video-action {
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-video-action.primary {
+    background: #fff;
+    color: #000;
+}
+
+.btn-video-action.primary:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.btn-video-action.secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.btn-video-action.secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+}
+
+.btn-icon {
+    font-size: 16px;
+}
+
+/* === TABS SECTION === */
+.tabs-section {
+    margin-top: 60px;
+}
+
+.tabs-header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.tabs-header::-webkit-scrollbar {
+    height: 4px;
+}
+
+.tabs-header::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.tabs-header::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 2px;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    color: #888;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+}
+
+.tab-button:hover {
+    color: #fff;
+}
+
+.tab-button.active {
+    color: #fff;
+    border-bottom-color: #b019b3;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tab Cards Grid */
+.tab-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.tab-card {
+    background: #111;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tab-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+.tab-card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.tab-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tab-card:hover .tab-card-image img {
+    transform: scale(1.1);
+}
+
+.tab-card-content {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tab-card-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+    margin: 0;
+}
+
+.tab-card-button {
+    background: #b019b3;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.tab-card-button:hover {
+    background: #8f1590;
+    transform: translateY(-2px);
+}
+
+/* === RESPONSIVE FEATURED GAME SECTION === */
+@media (max-width: 768px) {
+    .featured-game-section {
+        padding: 60px 0;
+    }
+
+    .featured-game-container {
+        padding: 0 20px;
+    }
+
+    .video-logo-overlay {
+        top: 20px;
+        left: 20px;
+    }
+
+    .game-logo {
+        max-width: 200px;
+        opacity: 0;
+    }
+
+    .video-play-pause {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .play-icon, .pause-icon {
+        font-size: 20px;
+    }
+
+    .video-description h2 {
+        font-size: 24px;
+    }
+
+    .video-description p {
+        font-size: 14px;
+    }
+
+    .video-buttons {
+        flex-direction: column;
+    }
+
+    .btn-video-action {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tabs-header {
+        gap: 5px;
+    }
+
+    .tab-button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .tab-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .tab-card-image {
+        height: 180px;
+    }
+
+    .tab-card-content {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-logo {
+        max-width: 150px;
+    }
+
+    .video-description h2 {
+        font-size: 20px;
+    }
+
+    .tab-button {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+}

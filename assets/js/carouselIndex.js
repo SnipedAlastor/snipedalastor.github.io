@@ -83,7 +83,7 @@ function loadSlide(index) {
         
         // Update content
         heroContent.innerHTML = `
-            <div class="game-logo">
+            <div class="game-logo-index">
                 <img src="${slide.logo}" alt="${slide.game} Logo" draggable="false">
             </div>
             <h2 class="hero-subtitle">${slide.subtitle}</h2>

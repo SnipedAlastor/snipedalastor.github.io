@@ -5,69 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoria Studios</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/newsSection.css">
+    <link rel="stylesheet" href="assets/css/featuredGameSection.css">
 </head>
 <body>
     <!-- Navigation bar -->
-<nav class="navbar" id="navbar">
-    <div class="nav-container">
-        <!-- Hamburger Menu (Mobile) -->
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-            <span id="menuIcon">☰</span>
-        </button>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Hamburger Menu (Mobile) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span id="menuIcon">☰</span>
+            </button>
 
-        <!-- Logo -->
-        <div class="nav-logo">
-            <a href="index.html" class="logo-link" id="logoLink">
-                <span class="logo-text">SS</span>
-            </a>
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link" id="logoLink">
+                    <span class="logo-text">SS</span>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" id="gamesToggle">
+                        <span class="link-text">GAMES</span> 
+                        <span class="arrow" id="gamesArrow">▼</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">NEWSWIRE</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">WIKI</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">DOWNLOADS</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">STORE</span>
+                        <span class="arrow">↗</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">SUPPORT</span>
+                        <span class="arrow">↗</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Right Side Actions-->
+            <div class="nav-actions">
+                <a href="https://pixeldrain.com/u/nNPefQbv" class="btn-launcher">Get Launcher</a>
+            </div>
         </div>
+    </nav>
 
-        <!-- Navigation Links -->
-        <ul class="nav-menu" id="navMenu">
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link" id="gamesToggle">
-                    <span class="link-text">GAMES</span> 
-                    <span class="arrow" id="gamesArrow">▼</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="link-text">NEWSWIRE</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="link-text">WIKI</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <span class="link-text">DOWNLOADS</span>
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link">
-                    <span class="link-text">STORE</span>
-                    <span class="arrow">↗</span>
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link">
-                    <span class="link-text">SUPPORT</span>
-                    <span class="arrow">↗</span>
-                </a>
-            </li>
-        </ul>
-
-        <!-- Right Side Actions-->
-        <div class="nav-actions">
-            <a href="https://pixeldrain.com/u/nNPefQbv" class="btn-launcher">Get Launcher</a>
-        </div>
-    </div>
-</nav>
-
-<!-- Mobile Overlay -->
-<div class="mobile-overlay" id="mobileOverlay"></div>
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
 
 
     <!-- Featured Games Dropdown -->
@@ -117,11 +120,241 @@
         </div>
     </section>
 
+    <!-- Featured Game Section -->
+    <section class="featured-game-section">
+        <div class="featured-game-container">
+            <!-- Video Player -->
+            <div class="featured-video-wrapper">
+                <div class="video-container">
+                    <video 
+                        id="featuredVideo" 
+                        class="featured-video"
+                        poster="assets/images/featured/barotraumatic-poster.jpg"
+                        loop
+                        muted
+                    >
+                        <source src="assets/videos/barotraumatic-gameplay.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <!-- Video Overlay (shows when paused) -->
+                    <div class="video-overlay" id="videoOverlay">
+                        <img src="assets/images/featured/barotraumatic-poster.png" alt="Barotraumatic" class="overlay-image">
+                    </div>
+                    
+                    <!-- Game Logo Overlay -->
+                    <div class="video-logo-overlay" id="videoLogoOverlay">
+                        <img src="assets/images/logos/barotraumatic.png" alt="Barotraumatic Logo" class="game-logo">
+                    </div>
+                    
+                    <!-- Play/Pause Button -->
+                    <button class="video-play-pause" id="videoPlayPause" aria-label="Play/Pause video">
+                        <span class="play-icon">▶</span>
+                    </button>
+                </div>
+
+                <!-- Video Description -->
+                <div class="video-description">
+                    <h2>Barotraumatic</h2>
+                    <p>Explore the depths of Europa, a dynamic underwater world for cooperative survival gameplay, featuring all the terror and content since announcement, playable solo or with friends.</p>
+                    <div class="video-buttons">
+                        <a href="https://www.youtube.com/watch?v=YUOWk-o8vaM" class="btn-video-action primary">
+                            <span class="btn-icon">▶</span>
+                            Watch Trailer
+                        </a>
+                        <a href="barotraumatic.html" class="btn-video-action secondary">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Section -->
+            <div class="tabs-section">
+                <!--<div class="tabs-header">
+                    <button class="tab-button active" data-tab="missions">Story Missions</button>
+                    <button class="tab-button" data-tab="updates">Latest Updates</button>
+                    <button class="tab-button" data-tab="guides">Guides & Tips</button>
+                    <button class="tab-button" data-tab="community">Community</button>
+                </div>-->
+
+                <!-- Tab Content: Story Missions -->
+                <!--<div id="missions" class="tab-content active">
+                    <div class="tab-cards-grid">
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/mission-1.jpg" alt="Premium Membership">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>The premium Membership for Barotraumatic players.</p>
+                                <a href="#" class="tab-card-button">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/mission-2.jpg" alt="Submarine Designs">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Create your own personalized submarine designs.</p>
+                                <a href="#" class="tab-card-button">Create Now</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/mission-3.jpg" alt="Story Mission">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>New story mission available now.</p>
+                                <a href="#" class="tab-card-button">Watch Trailer</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/mission-4.jpg" alt="Career Progress">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>See all the challenges you've completed in your Career.</p>
+                                <a href="#" class="tab-card-button">View Progress</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!-- Tab Content: Latest Updates -->
+                <!--<div id="updates" class="tab-content">
+                    <div class="tab-cards-grid">
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/update-1.jpg" alt="New Submarines">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>New submarine classes added to the fleet.</p>
+                                <a href="#" class="tab-card-button">Explore</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/update-2.jpg" alt="Creature AI">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Enhanced creature AI and behaviors.</p>
+                                <a href="#" class="tab-card-button">Read More</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/update-3.jpg" alt="New Weapons">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>New weapons and equipment available.</p>
+                                <a href="#" class="tab-card-button">View Items</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/update-4.jpg" alt="New Map">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Expanded map with new biomes.</p>
+                                <a href="#" class="tab-card-button">Discover</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!-- Tab Content: Guides & Tips -->
+                <!--<div id="guides" class="tab-content">
+                    <div class="tab-cards-grid">
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/guide-1.jpg" alt="Beginner Guide">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Beginner's guide to submarine management.</p>
+                                <a href="#" class="tab-card-button">Read Guide</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/guide-2.jpg" alt="Combat Tactics">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Advanced combat tactics and strategies.</p>
+                                <a href="#" class="tab-card-button">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/guide-3.jpg" alt="Crafting Guide">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Resource gathering and crafting guide.</p>
+                                <a href="#" class="tab-card-button">View Guide</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/guide-4.jpg" alt="Creature Encyclopedia">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Creature encyclopedia and weaknesses.</p>
+                                <a href="#" class="tab-card-button">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+                <!-- Tab Content: Community -->
+                <!--<div id="community" class="tab-content">
+                    <div class="tab-cards-grid">
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/community-1.jpg" alt="Discord">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Join our official Discord server.</p>
+                                <a href="#" class="tab-card-button">Join Now</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/community-2.jpg" alt="Share Designs">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Share your submarine designs.</p>
+                                <a href="#" class="tab-card-button">Upload</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/community-3.jpg" alt="Highlights">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Watch community highlights and clips.</p>
+                                <a href="#" class="tab-card-button">Watch</a>
+                            </div>
+                        </div>
+                        <div class="tab-card">
+                            <div class="tab-card-image">
+                                <img src="assets/images/featured/community-4.jpg" alt="Events">
+                            </div>
+                            <div class="tab-card-content">
+                                <p>Participate in community events.</p>
+                                <a href="#" class="tab-card-button">View Events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/featuredGames.js"></script>
     <script src="assets/js/newsData.js"></script>
     <script src="assets/js/newsSection.js"></script>
+    <script src="assets/js/featuredGameSection.js"></script>
     <script src="assets/js/carouselIndex.js"></script>
 </body>
 </html>
