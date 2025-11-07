@@ -4,7 +4,7 @@ const carouselData = [
         id: 1,
         game: "Barotraumatic",
         logo: "assets/images/logos/barotraumatic.png",
-        title: "BAROTRAUMATIC TRAILER",
+        title: "BAROTRAUMATIC IN DEVELOPMENT",
         subtitle: "COMING 2027",
         background: "assets/images/carouselIndex/barotraumatic.png",
         buttons: [
