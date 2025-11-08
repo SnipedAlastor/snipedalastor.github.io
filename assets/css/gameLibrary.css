@@ -1,0 +1,380 @@
+/* === GAME LIBRARY SECTION === */
+.game-library-section {
+    background: #000;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.game-library-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    position: relative;
+    padding-top: 450px;
+}
+
+/* Header - Positioned below the grids */
+.game-library-header {
+    margin-top: 0;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+.game-library-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.game-library-header p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+/* Grid Container */
+.game-library-grid {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* == GRADIENT OVERLAYS === */
+/* Left side gradient */
+.game-library-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Right side gradient */
+.game-library-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* Bottom gradient overlay */
+.game-library-grid::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    right: -500px;
+    width: 2500px;
+    height: 150px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 5;
+    pointer-events: none;
+}
+ 
+/* Scrolling Rows */
+.game-library-row-top,
+.game-library-row-bottom {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: max-content;
+}
+
+/* Top Row - Scroll Left */
+.game-library-row-top {
+    animation: scrollLeft 40s linear infinite;
+}
+
+/* Bottom Row - Scroll Right */
+.game-library-row-bottom {
+    animation: scrollRight 40s linear infinite;
+    padding-left: 100px;
+}
+
+/* Pause animation on hover */
+.game-library-row-top:hover,
+.game-library-row-bottom:hover {
+    animation-play-state: paused;
+}
+
+/* Keyframes for scrolling left */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Keyframes for scrolling right */
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Game Card */
+.game-card {
+    position: relative;
+    width: 200px;
+    aspect-ratio: 3 / 4;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+    pointer-events: auto;
+}
+
+.game-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 50px rgba(176, 25, 179, 0.4);
+    z-index: 10;
+}
+
+.game-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.game-card:hover .game-card-image {
+    transform: scale(1.1);
+}
+
+/* Game Card Overlay */
+.game-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 20px 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-card:hover .game-card-overlay {
+    opacity: 1;
+}
+
+.game-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+/* View All Button */
+.game-library-footer {
+    text-align: left;
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+
+.btn-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 35px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-view-all:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.btn-view-all .arrow {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.btn-view-all:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 1200px) {
+    .game-card {
+        width: 180px;
+    }
+}
+
+@media (max-width: 992px) {
+    .game-library-section {
+        padding: 60px 0;
+        min-height: 500px;
+    }
+
+    .game-library-container {
+        padding-top: 350px;
+    }
+
+    .game-library-header {
+        margin-top: 0;
+    }
+
+    .game-library-header h2 {
+        font-size: 36px;
+    }
+
+    .game-library-header p {
+        font-size: 16px;
+    }
+
+    .game-card {
+        width: 160px;
+    }
+
+    .game-library-row-top,
+    .game-library-row-bottom {
+        gap: 12px;
+    }
+    
+    .game-library-grid {
+        top: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-library-section {
+        padding: 50px 0;
+        min-height: 450px;
+    }
+    
+    .game-library-container {
+        padding: 0 20px;
+        padding-top: 300px;
+    }
+
+    .game-library-header h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    .game-library-header p {
+        font-size: 15px;
+    }
+
+    .game-library-grid {
+        top: 30px;
+    }
+
+    .game-card {
+        width: 140px;
+    }
+
+    .game-library-row-top,
+    .game-library-row-bottom {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .game-library-row-bottom {
+        padding-left: 50px;
+    }
+    
+    /* Adjust side gradients for mobile */
+    .game-library-section::before,
+    .game-library-section::after {
+        width: 80px;
+    }
+    
+    .game-library-footer {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-library-section {
+        padding: 40px 0;
+        min-height: 400px;
+    }
+    
+    .game-library-container {
+        padding: 0 15px;
+        padding-top: 250px;
+    }
+
+    .game-library-header {
+        margin-top: 0;
+    }
+
+    .game-library-header h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .game-library-header p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    .game-library-grid {
+        top: 20px;
+    }
+
+    .game-card {
+        width: 120px;
+    }
+
+    .game-library-row-top,
+    .game-library-row-bottom {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .game-library-row-bottom {
+        padding-left: 30px;
+    }
+
+    .game-card-title {
+        font-size: 12px;
+    }
+
+    .btn-view-all {
+        padding: 12px 28px;
+        font-size: 13px;
+    }
+    
+    /* Smaller side gradients for mobile */
+    .game-library-section::before,
+    .game-library-section::after {
+        width: 50px;
+    }
+    
+    .game-library-footer {
+        margin-top: 25px;
+    }
+}
