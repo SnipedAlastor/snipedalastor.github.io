@@ -11,9 +11,9 @@ const gameLibraryData = {
         },
         {
             id: 2,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "KaxkekForge",
+            image: "assets/images/game-library/kaxkekforge.png",
+            link: "kaxkekforge.html"
         },
         {
             id: 3,
@@ -61,9 +61,9 @@ const gameLibraryData = {
         },
         {
             id: 10,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "KaxkekForge",
+            image: "assets/images/game-library/kaxkekforge.png",
+            link: "kaxkekforge.html"
         },
         {
             id: 11,

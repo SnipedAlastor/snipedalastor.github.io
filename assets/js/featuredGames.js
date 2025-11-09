@@ -15,6 +15,12 @@ const gamesData = {
             "image": "assets/images/featuredGames/barotraumatic.png",
             "link": "games/barotraumatic.html"
         },
+        {
+            "id": 2,
+            "title": "KaxkekForge",
+            "image": "assets/images/featuredGames/kaxkekforge.png",
+            "link": "games/kaxkekforge.html"
+        },
     ]
 };
 
