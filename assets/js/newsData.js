@@ -2,11 +2,11 @@
 const newsData = [
     {
         id: 1,
-        game: "General",
-        category: "Barotraumatic",
-        title: "Barotraumatic in Development!",
-        image: "assets/images/news/scoria-news-1.jpg",
-        date: "November 7, 2025",
+        game: "Afloaters",
+        category: "Afloaters",
+        title: "Afloaters in Development!",
+        image: "assets/images/news/afloaters.png",
+        date: "November 11, 2025",
         link: "news/barotraumatic-development.html"
     }
 ];

@@ -11,15 +11,9 @@ const gamesData = {
     "featuredGames": [
         {
             "id": 1,
-            "title": "Barotraumatic",
-            "image": "assets/images/featuredGames/barotraumatic.png",
-            "link": "games/barotraumatic.html"
-        },
-        {
-            "id": 2,
-            "title": "KaxkekForge",
-            "image": "assets/images/featuredGames/kaxkekforge.png",
-            "link": "games/kaxkekforge.html"
+            "title": "Afloaters",
+            "image": "assets/images/featuredGames/afloaters.png",
+            "link": "games/afloaters.html"
         },
     ]
 };

@@ -2,28 +2,16 @@
 const carouselData = [
     {
         id: 1,
-        game: "Barotraumatic",
-        logo: "assets/images/logos/barotraumatic.png",
-        title: "BAROTRAUMATIC IN DEVELOPMENT",
+        game: "Afloaters",
+        logo: "assets/images/logos/afloaters.png",
+        title: "AFLOATERS IN DEVELOPMENT",
         subtitle: "COMING 2027",
-        background: "assets/images/carouselIndex/barotraumatic.png",
+        background: "assets/images/carouselIndex/afloaters.webp",
         buttons: [
             { text: "Watch Trailer", icon: "▶", link: "https://www.youtube.com/watch?v=YUOWk-o8vaM" },
             { text: "Explore News", icon: "", link: "#explore-barotraumatic" }
         ]
     },
-    {
-        id: 2,
-        game: "KaxkekForge",
-        logo: "assets/images/logos/kaxkekforge.png",
-        title: "KAXKEKFORGE IN DEVELOPMENT",
-        subtitle: "COMING LATE 2026",
-        background: "assets/images/carouselIndex/barotraumatic.png",
-        buttons: [
-            { text: "Watch Trailer", icon: "▶", link: "https://www.youtube.com/watch?v=YUOWk-o8vaM" },
-            { text: "Explore News", icon: "", link: "#explore-barotraumatic" }
-        ]
-    }
 ];
 
 // === CAROUSEL VARIABLES ===

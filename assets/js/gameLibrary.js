@@ -5,101 +5,101 @@ const gameLibraryData = {
     topRow: [
         {
             id: 1,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 2,
-            title: "KaxkekForge",
-            image: "assets/images/game-library/kaxkekforge.png",
-            link: "kaxkekforge.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 3,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 4,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 5,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 6,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 7,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 8,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         }
     ],
     bottomRow: [
         {
             id: 9,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 10,
-            title: "KaxkekForge",
-            image: "assets/images/game-library/kaxkekforge.png",
-            link: "kaxkekforge.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 11,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 12,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 13,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 14,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 15,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         },
         {
             id: 16,
-            title: "Barotraumatic",
-            image: "assets/images/game-library/barotraumatic.jpg",
-            link: "barotraumatic.html"
+            title: "Afloaters",
+            image: "assets/images/game-library/afloaters.png",
+            link: "afloaters.html"
         }
     ],
     viewAllLink: "games.html"
