@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoria Studios</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/legal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=youtube_activity" />
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Hamburger Menu (Mobile) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span id="menuIcon">☰</span>
+            </button>
+
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html" class="logo-link" id="logoLink">
+                    <span class="logo-text">SS</span>
+                </a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link" id="gamesToggle">
+                        <span class="link-text">GAMES</span> 
+                        <span class="arrow" id="gamesArrow">▼</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">NEWSWIRE</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">VIDEOS</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">WIKI</span>
+                        <span class="arrow">↗</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">
+                        <span class="link-text">SUPPORT</span>
+                        <span class="arrow">↗</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Right Side Actions-->
+            <div class="nav-actions">
+                <a href="https://pixeldrain.com/u/nNPefQbv" class="btn-launcher">Get Launcher</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Featured Games Dropdown -->
+    <div class="featured-dropdown" id="featuredDropdown">
+        <div class="featured-container">
+            <div class="featured-header">
+                <h2>Featured Games</h2>
+                <a href="games.html" class="view-all-btn">
+                    View All
+                    <span class="arrow-right">→</span>
+                </a>
+            </div>
+            <div class="featured-games-grid" id="featuredGamesGrid">
+                <!-- Games will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal Page Content -->
+    <main class="legal-page">
+        <div class="legal-container">
+            
+            <!-- Page Title -->
+            <h1 class="legal-title">Legal</h1>
+            <p class="legal-updated">Last Updated: November 18, 2025</p>
+
+            <!-- Introduction -->
+            <div class="legal-intro">
+                <p>Scoria Studios is a unregistered company somewhere out there in the wild. These Terms of Service ("Agreement") cover the terms and conditions under which we offer you access to use our games, apps, products, websites, and other services (the "Services"). This Agreement is a legal contract between you and Scoria Studios. By accessing our Services, you are agreeing to be bound by the terms of this Agreement.</p>
+                
+                <div class="spacer"></div>
+                
+                <p>Nothing in this Agreement is intended to limit or exclude your rights under any mandatory consumer laws in your jurisdiction of residence. If you do not agree to all the terms in this Agreement, you are not permitted to use the Services.</p>
+            </div>
+
+            <div class="spacer-lg"></div>
+
+            <!-- Important Notices -->
+            <div class="legal-highlight">
+                <h3>Please read this Agreement carefully, and take particular care when reviewing these sections:</h3>
+                <ul>
+                    <li><strong>Section 4 — User Rules:</strong> When using our Services, you have the obligation and responsibility to help us ensure that Services are inclusive and respectful for all users and our employees and contractors.</li>
+                </ul>
+            </div>
+
+            <div class="spacer-xl"></div>
+
+            <!-- Table of Contents -->
+            <div class="legal-toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#section-1">1. Your Use of the Services</a></li>
+                    <li><a href="#section-2">2. Your Limited License</a></li>
+                    <li><a href="#section-3">3. Modification to this Agreement</a></li>
+                    <li><a href="#section-4">4. User Rules</a></li>
+                    <li><a href="#section-5">5. Content Moderation; Reporting Harmful or Illegal Content</a></li>
+                    <li><a href="#section-6">6. Updates, and Features</a></li>
+                    <li><a href="#section-7">7. Your Responsibilities to Us</a></li>
+                    <li><a href="#section-8">8. Photosensitive Seizure Warning</a></li>
+                    <li><a href="#section-9">9. Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="spacer-xl"></div>
+
+            <!-- Section 1 -->
+            <div class="legal-section" id="section-1">
+                <div class="legal-section-header">
+                    <h2>1. Your Use of the Services</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <h3>1.1. Age Restrictions and Legal Responsibility</h3>
+                    <p>As used in this Agreement, "you" or "your" means the individual user interacting with our Services, or if such user is below the minimum legal age of adulthood in their country of residence ("Minor"), the user's parent or legal guardian entering into this Agreement on their behalf. Minors must ask their parent or guardian to review and explain this Agreement to them, and to agree to this Agreement on their behalf. If you accept this Agreement on behalf of a Minor, you should supervise the Minor's use of the Services.</p>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>If you are the parent or guardian of a Minor and you agreed to this Agreement on their behalf, you agree that you will be responsible for all uses of the Services, by that Minor whether or not such uses were explicitly authorized by you. You are legally and financially responsible for all of your actions while using or accessing the Services.</p>
+
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="legal-section" id="section-2">
+                <div class="legal-section-header">
+                    <h2>2. Your Limited License</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <h3>2.1. We Reserve All Rights to our IP</h3>
+                    <p>We, and our licensors, own and reserve all rights, title, and interest in and to the Services, including all:</p>
+                    
+                    <ul>
+                        <li>Information, text, data, files, code, scripts, designs, graphics, artwork, illustrations, photographs, sounds, music, titles, themes, objects, characters, names, dialogue, locations, stories, plot, animation, concepts, audio-visual effects, interactive features, gameplay, methods of operation, the compilation, assembly, and arrangement of the materials of the Services, and all other copyrightable material;</li>
+                        <li>Trademarks, logos, trade names, trade dress, service marks, and trade identities of various parties, including ours; and</li>
+                        <li>Other forms of intellectual property (all of the foregoing, collectively "Content").</li>
+                    </ul>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>2.2. Personal, Non-Commercial Use Only</h3>
+                    <p>Subject to the terms of this Agreement, we grant you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to access and use the Services, for your personal, non-commercial enjoyment. The Services, including the Content, but excluding any tangible medium the Services may be supplied on, are licensed, not sold. This license is personal to you only and does not give you any ownership rights in any of the Services.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>2.3. Restrictions</h3>
+                    <p>The limited license granted in this Agreement does not give you any right to, and you may not, sell, copy (except under applicable legal exceptions such as the "private copy" exception under applicable law), loan, lease, distribute, disassemble, decompile, decrypt, hack, derive source code from, reverse engineer (except where permitted under applicable legal exceptions deriving from EU Directive 2009/24 or other applicable law), modify, create derivative works, commercialize, or otherwise exploit the Services (including the Content), express written terms provided by Scoria Studios permitting such conduct.</p>
+                    
+                    <div class="spacer"></div>
+                    
+                    <div class="legal-important">
+                        <p><strong>Important:</strong> Nothing in the limited license granted in this Agreement authorizes the use of the Services (including the Content) in any manner to develop, train, enhance, or provide source material for, or promote, any Generative AI Tools; and any such uses are hereby explicitly prohibited.</p>
+                    </div>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p><strong>"Generative AI Tools"</strong> means any tool or computer program that uses algorithms or technology commonly known as artificial intelligence or machine learning to create or generate content such as, but not limited to, software code, written text, still or moving images, musical works, human voice emulation, audio material, or other creative works based on text, image, sound prompts, or other inputs.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>2.4. Legal Effect</h3>
+                    <p>This license describes certain legal rights. You may have other rights under the laws of your state or country. This license does not change your rights under the laws of your state or country if the laws of your state or country don't permit it to do so.</p>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="legal-section" id="section-3">
+                <div class="legal-section-header">
+                    <h2>3. Modifications to this Agreement</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <p>We reserve the right to modify this Agreement, in whole or in part, at any time. If you do not wish to agree to the modified Agreement, you may terminate your use of the Services, but you will remain liable for any unpaid amounts due and payable to any Digital Storefront. If you do not agree to the modified Agreement, you may also lose access to the Services once the modified Agreement takes effect.</p>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>If we materially modify this Agreement, we will try to notify you of any such modifications, and of the consequences of not accepting the modified Agreement, in advance of the modified Agreement taking effect. By actively accepting the modified Agreement, or by continuing to use the Services after the modified Agreement becomes effective, you agree to be bound by the modified terms of this Agreement.</p>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="legal-section" id="section-6">
+                <div class="legal-section-header">
+                    <h2>4. User Rules</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <p>In this Section 4, "Services"; and "User Material" means Your UGC and any Custom Content you create.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>4.1. No Illegal Conduct or Unauthorized Commercial Exploitation</h3>
+                    <p>You agree that:</p>
+                    
+                    <ul>
+                        <li><strong>(1)</strong> You will only use the Services for lawful purposes, in compliance with applicable laws.</li>
+                        <li><strong>(2)</strong> You will not use the Services in connection with any wager of any money or other thing of value unless subject to separate, express written terms provided by Scoria Studios permitting such conduct.</li>
+                        <li><strong>(3)</strong> You will use the Services for your own personal, non-commercial use. You will not commercially exploit the Services unless subject to separate, express written terms provided by Scoria Studios permitting such conduct. This includes participating in, enabling, or encouraging the collection, sale, or exchange of anything from or via the Services that is not explicitly authorized by Scoria Studios; facilitating, creating, or maintaining any unauthorized connection to the Services (including, any unauthorized server that modifies, emulates, or otherwise connects to any of the Services); participating in or operating any commercial enterprise or market that purports to rent, sell, share, exchange, or transfer; and creating or participating in any exploitation of price differences by any means (for example, between real money currency prices).</li>
+                    </ul>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>4.2. Respect Intellectual Property</h3>
+                    <p>You agree that you will not use the Services to create, upload, or distribute any User Material that infringes any third party's copyright, trademark, or other intellectual property rights.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>4.3. Code of Conduct</h3>
+                    <p>You agree that:</p>
+                    
+                    <ul>
+                        <li><strong>(1)</strong> You will not use exploits or illegal or unauthorized means to interfere with or adversely impact any other user's ability to use the Services as intended; to gain unfair gameplay advantage; or to gain access to other Content to which you do not have valid entitlement. This includes the use of cheats or so-called "mod menus", unauthorized mods, hacks, glitches, or any other technical exploits, and phishing, scamming, or social engineering.</li>
+                        
+                        <li><strong>(2)</strong> You will not use the Services to create, upload, or distribute any User Material that violates or invades another person's privacy. This includes "doxing" i.e. sharing or threatening to share information to embarrass, intimidate, harm, or harass another person.</li>
+                        
+                        <li><strong>(3)</strong> You will not use the Services to engage in fraud, or to create, upload, or distribute any User Material that is knowingly or intentionally misleading, false, or fraudulent. You will not use the Services to engage in "spam," i.e. repeatedly or periodically misuse a communication channel in a way that disrupts or interferes with the operations of the Services, advertises any third-party product or service, or adversely impacts any other user's ability to use the Services as intended.</li>
+                        
+                        <li><strong>(4)</strong> You will not use the Services to create, upload, or distribute User Material that contains actual or shockingly realistic depictions or descriptions of gore, excessive violence, torture, or animal cruelty. This includes all depictions of such content, regardless of whether the User Material is real or manipulated media, animation, computer-generated imagery, or other digital creation.</li>
+                        
+                        <li><strong>(5)</strong> You will not use the Services to create, upload, or distribute User Material or engage in conduct that depicts, promotes, or attempts to normalize, encourage, or knowingly result in another person's eating disorder, suicide, or other acts of physical self-harm or endangerment. This includes User Material or conduct that is reasonably understood to facilitate, encourage, or instruct another person to physically harm or starve themselves; to consume dangerous amounts of alcohol, drugs, or other substances; or to engage in any dangerous real-world "stunt," "challenge," or unsanctioned activity that is likely to result in serious injury to themselves or others.</li>
+                        
+                        <li><strong>(6)</strong> You will not use the Services to create, upload, or distribute User Material or engage in conduct that is abusive, bullying, harassing, or is reasonably understood to be a physical or verbal threat against another person. This includes User Material that is defamatory and conduct such as camping, griefing, stream sniping, swatting, or other abusive in-game behavior.</li>
+                        
+                        <li><strong>(7)</strong> You will not use the Services to create, upload, or distribute any User Material or engage in conduct that is pornographic, obscene, or sexually harassing. This includes distributing unsolicited or unwanted sexually suggestive User Material; engaging in unsolicited or unwanted sexualization of another person; making threats or attacks based on another person's actual, perceived, or supposed sexuality or sexual activity; or the unauthorized sharing of another's intimate or sexually explicit content without their consent (i.e. "revenge porn").</li>
+                        
+                        <li><strong>(8)</strong> You will not use the Services to create, upload, or distribute any User Material or engage in conduct that depicts, promotes, or attempts to normalize, encourage, or knowingly result in the sexual abuse of minors. This includes User Material that in any way sexualizes Minors, including real or manipulated media, animation, computer-generated imagery, or other digital creation; engaging or attempting to engage in sexually suggestive or explicit communication with a Minor; and soliciting sexually suggestive or explicit UGC from, or sharing sexually suggestive or explicit User Material with, a Minor.</li>
+                        
+                        <li><strong>(9)</strong> You will not use the Services to create, upload, or distribute User Material or engage in conduct that constitutes hate speech or behavior, which we define to be any form of expression that is reasonably understood to attack or promote hatred or violence against an individual or group based on any of the following characteristics: age; color or race; disability; ethnicity; gender or gender identity; national origin or immigration status; religious affiliation; sex or sexual orientation; military service; socioeconomic class, status, or caste; or weight, size, or body type.</li>
+                        
+                        <li><strong>(10)</strong> You will not use the Services to create, upload, or distribute User Material or engage in conduct that depicts, promotes, or supports violent extremism or terrorism. This includes any User Material or conduct which is reasonably understood as endorsing or supporting extremist violence or the perpetrators of such acts; and promoting extremist ideologies or conspiracy theories that encourage or incite violence against others.</li>
+                        
+                        <li><strong>(11)</strong> You will follow any additional rules set out in the individual Community Standards that may apply to your use of specific games, apps, products, or websites within the Services, all of which are incorporated herein by reference.</li>
+                        
+                        <li><strong>(12)</strong> In addition to the foregoing, you will not use the Services to: create, upload, or distribute any other User Material, or engage in any other conduct, that is or promotes anything illegal, harmful, or that we otherwise deem to be inappropriate for the relevant Services; or attempt or conspire to commit any of the violations specified in this Section 4.</li>
+                    </ul>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>4.4. No Technical Exploits</h3>
+                    <p>You agree that:</p>
+                    
+                    <ul>
+                        <li><strong>(1)</strong> You will not use IP proxying or other methods to disguise your location or place of residence. This includes circumventing geographical restrictions on access to Content, access controls, or technical protective measures; or engaging in activities that are unlawful based on applicable local law.</li>
+                        
+                        <li><strong>(2)</strong> You will not, unless subject to separate, express written terms provided by Scoria Studios, use the Services via, or copy any Content to, a remote server, virtual PC, or other system or network including, without limitation, one that enables (or purports to enable) such Services or Content to be downloaded or streamed to one or more separate internet-enabled devices.</li>
+                        
+                        <li><strong>(3)</strong> You will not use, promote, or make available any bug, glitch, exploit, cheat, "mod menu," hack, script, bot, unauthorized mod, or other methods that interact with the Services resulting in a breach this Agreement. This includes any such methods that collect information or user data; exploit system vulnerabilities; circumvent content moderation or filtering systems; or otherwise intercept, redirect, or interfere with the operation of the Services as intended.</li>
+                        
+                        <li><strong>(4)</strong> You will not reverse engineer, decompile, or disassemble (except where permitted under applicable legal exceptions deriving from EU Directive 2009/24 or other applicable law), display, perform, prepare derivative works based on, or otherwise modify the Services, in whole or in part, without our explicit prior written consent.</li>
+                        
+                        <li><strong>(5)</strong> You will not use the Services to distribute, upload, or transmit any software, scripts, code, or other information (including, but not limited to, any virus, worm, timebot, cancelbot, trojan horse, hacks, or other harmful code) to modify or alter the Services in any unauthorized way, or to transmit such information.</li>
+                    </ul>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>4.5. Supporting or Encouraging Violations</h3>
+                    <p>You agree that you will not provide Material support to another user's violation or attempted violation of this Agreement. This includes providing financial support; know-how, expertise, or other assistance; or repeated encouragement to engage in conduct that violates this Agreement.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>4.6. Applicability to Employees, Agents, and Contractors</h3>
+                    <p>For clarity, the rules for conduct and behavior in this Section 4 apply to your communications and interactions with Scoria Studios's employees, agents, and contractors including, without limitation, individuals on our customer support, engineering, security, or community teams.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>4.7. Consequences for Violations; Notification of Law Enforcement</h3>
+                    <div class="legal-important">
+                        <p>If you breach the Agreement, including without limitation the User Rules in this Section 4 (as amended from time to time), Scoria Studios reserves the right to take Adverse Action against you.</p>
+                    </div>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p><strong>"Adverse Action"</strong> may include, without limitation:</p>
+                    
+                    <ul>
+                        <li>Suspending your access to some or all of the Services</li>
+                        <li>Terminating your access to some or all of the Services, in accordance with the termination provisions below</li>
+                        <li>Barring you from accessing the Services in the future</li>
+                        <li>Taking appropriate legal action to enforce this Agreement or our other rights under applicable law</li>
+                    </ul>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>We may notify law enforcement or other government agency or regulatory body, and provide any associated personal data as set out in our Privacy Policy, if the breach involves a threat to the life or safety of yourself or others, or any other activity that we believe to be unlawful. We reserve the right to take Adverse Action against you based on information we might receive from third parties including, without limitation, other users, law enforcement, government agencies or other regulatory authorities. We are not liable for any violation of this Agreement by you or by any other user.</p>
+                </div>
+            </div>
+
+            <!-- Section 5 -->
+            <div class="legal-section" id="section-5">
+                <div class="legal-section-header">
+                    <h2>5. Content Moderation; Reporting Harmful or Illegal Content</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <p>In this Section 5, "User Material" means all UGC and Custom Content.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>5.1. Moderation</h3>
+                    <p>We reserve the right to moderate the use of the Services for a variety of different purposes, including to:</p>
+                    
+                    <ul>
+                        <li>Prevent cheating and hacking</li>
+                        <li>Detect, modify, take-down, suppress, block, hide, remove, or delete illegal or harmful User Material</li>
+                        <li>Ensure your compliance with this Agreement</li>
+                        <li>Enforce the terms of this Agreement</li>
+                        <li>Improve the Services</li>
+                    </ul>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>We have no obligation to host, maintain, support, or distribute User Material. We reserve the right to modify, take-down, suppress, block, hide, remove, or delete any or all User Material, and report any illegal User Material and any related user information to the appropriate authorities. We have not necessarily reviewed and are not obligated to actively monitor any User Material that may be available via the Services. We do not confirm the security, quality, or originality of any User Material, and the User Material available on the Services does not represent the views of Scoria Studios or its management, employees, or any other person associated with us.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>5.2. User Tools; Reporting Harmful or Illegal Content</h3>
+                    <p>The Services may include tools to enable users to control their interactions with other users, such as allowing users to opt-in to in-game text chat or voice communications, or to enable users to "mute" or block other users. If you are aware of User Material or user conduct on the Services that violates the User Rules in Section 5 of this Agreement, you may notify us using the reporting tools located in-game.</p>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>Please visit Customer Support for more information about how to submit a Report about User Material or user conduct that violates the User Rules. By submitting a Report, you confirm that you have a good faith belief that the User Material or user conduct identified in your Report violates this Agreement and that the information provided in your Report is accurate and complete.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>5.3. Notice to Users</h3>
+                    <p>Consistent with our obligations under applicable law, we will try to notify you as soon as reasonably practicable relating to:</p>
+                    
+                    <ul>
+                        <li>Our decision on a Report or appeal you submit; or</li>
+                        <li>If we moderate Your UGC or the Custom Content you create or take Adverse Action against you because of Your UGC or the Custom Content you create</li>
+                    </ul>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>Our notice will try to explain the effect that any such decision or action may have on your UGC, Custom Content, Service access or entitlements, and (if applicable) your ability to submit an appeal.</p>
+                </div>
+            </div>
+
+            <!-- Section 6 -->
+            <div class="legal-section" id="section-6">
+                <div class="legal-section-header">
+                    <h2>6. Updates, and Features</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <h3>6.1. Updates, Modifications, and Sunset</h3>
+                    <p>We may provide patches, updates, or upgrades to the Services, Content, that may be required for you to continue using the Services, including automatic or "in the background" updates without notice to you. Such updates are subject to this Agreement unless other terms are presented with the updates, in which case, those other terms apply. We are not obligated to make any updates available.</p>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>We may modify, alter, or suspend, or sunset, or terminate (whether in whole or in part) any of our Services, for a valid reason. Valid reasons include, without limitation:</p>
+                    
+                    <ul>
+                        <li>Improvement of our Services, Content (such as offering new features or enhancing the safety or security of our users or third parties)</li>
+                        <li>Changes necessary for game balance, to fix bugs, or to prevent or counter exploits</li>
+                        <li>Changes due to new technical requirements or an increased or decreased number of users</li>
+                        <li>Changes resulting from our investigation of or efforts to enforce against breaches of this Agreement</li>
+                        <li>Changes to, or termination of, agreements or licenses we have with third-parties</li>
+                        <li>Interruption or termination of third-party services or features that are part of, connected with, or a dependency of our Services, Content</li>
+                        <li>Changes due to specific and verifiable open market costs</li>
+                        <li>Other material, legal, regulatory, or security reasons</li>
+                    </ul>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>6.2. Third Party Services</h3>
+                    <p>Through the Services, you may have the option to access or enable content, software, apps, products, websites, platforms, functionality, and services operated by third parties that are not part of Scoria Studios or otherwise under our control ("Third Party Services"). If you choose to access, transact with, enable, or otherwise interact with any such Third Party Services, you understand that you are directing the applicable third party entity to make such Third Party Services available to you.</p>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>You are responsible for your dealings with third parties. When you use our Services to access Third Party Services, any applicable usage terms associated with the Third Party Services will govern your use of that Third Party Service. We do not endorse any Third Party Services made available or marketed on or through the Services. We do not license any intellectual property rights to you as part of any Third Party Services, and we are not responsible or liable to you or others for any Third Party Services or for the results, information, content, or interactions you may encounter while using them. Any concerns you have regarding such Third Party Services must be directed to the provider of such Third Party Services.</p>
+
+                    <div class="spacer-lg"></div>
+
+                    <h3>6.3. Internet-Based Services</h3>
+                    <p>The Services may require a connection to the internet via a wireless or cellular network and, as a result, may therefore receive certain information about the device, system, or software you used to connect to the Services. Any such information is collected and used by us in accordance with our Privacy Policy. You are solely responsible for the maintenance and reliability of your internet connection at your own cost and for any network usage fees which may arise from your access to the Services.</p>
+
+                </div>
+            </div>
+
+            <!-- Section 7 -->
+            <div class="legal-section" id="section-7">
+                <div class="legal-section-header">
+                    <h2>7. Your Responsibilities to Us</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <p>You agree to defend, indemnify and hold harmless Scoria Studios from and against any and all direct liabilities, damages, losses arising out of or in connection with:</p>
+                    
+                    <ul>
+                        <li><strong>(1)</strong> Your breach of this Agreement</li>
+                        <li><strong>(2)</strong> Any information or content provided by you that infringes the rights of a third party when used by us in accordance with this Agreement</li>
+                        <li><strong>(3)</strong> Your unlawful acts or omissions</li>
+                    </ul>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>We can assist, at our own expense, in the defense of any matter subject to indemnification by you, and in such case, you agree to cooperate with us, and we will take reasonable steps to mitigate our losses. However, you are not required to indemnify Scoria Studios in respect of any liabilities, damages or losses arising out of or in connection with the negligent acts or omissions, fraud, or willful misconduct by Scoria Studios, Scoria Studios's officer's employees, contractors or agents, or to the extent you are not responsible for the breach.</p>
+                    
+                    <div class="spacer-lg"></div>
+                    
+                    <p>You are solely responsible for any third party costs you incur to use the Services.</p>
+                </div>
+            </div>
+
+            <!-- Section 8 -->
+            <div class="legal-section" id="section-8">
+                <div class="legal-section-header">
+                    <h2>8. Photosensitive Seizure Warning</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <div class="legal-important">
+                        <p>A very small percentage of individuals may experience epileptic seizures when exposed to certain light patterns or flashing lights, including some of the visual effects that appear in certain video games. Symptoms may even be experienced by individuals with no history of epilepsy or photosensitivity. If you or anyone in your family have an epileptic or photosensitivity condition, please consult your physician before playing any of our video games.</p>
+                    </div>
+                    
+                    <div class="spacer"></div>
+                    
+                    <p>If you experience any of the following symptoms while playing any of our video games, immediately discontinue use and consult your physician before resuming play:</p>
+                    
+                    <ul>
+                        <li>Dizziness</li>
+                        <li>Altered vision</li>
+                        <li>Eye or muscle twitches</li>
+                        <li>Loss of awareness</li>
+                        <li>Disorientation</li>
+                        <li>Any involuntary movement</li>
+                        <li>Convulsions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Section 9 -->
+            <div class="legal-section" id="section-9">
+                <div class="legal-section-header">
+                    <h2>9. Contact Us</h2>
+                    <span class="section-arrow">▼</span>
+                </div>
+                <div class="legal-section-content">
+                    <p>If you have any questions or concerns about the Services, or this Agreement, please visit Scoria Studios Customer Support and submit a support ticket. Scoria Studios Customer Support provides a single point of contact for you to communicate with Scoria Studios. We try to review and respond to all support tickets as soon as reasonably practicable.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Support Banner -->
+            <div class="footer-support-banner">
+                <div class="support-logo">
+                    <span class="support-logo-icon">SS</span>
+                    <span class="support-logo-text">Support</span>
+                </div>
+                <p class="support-description">Get help with issues, browse common solutions, view service status updates, and more.</p>
+                <a href="#support" class="btn-get-support">
+                    Get Support
+                </a>
+            </div>
+
+            <!-- Footer Content -->
+            <div class="footer-content">
+                <!-- Contact Column -->
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#community">Community Resources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#corporate">Corporate</a></li>
+                        <li><a href="legal.html">Legal</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="https://twitter.com" class="social-icon" aria-label="X (Twitter)" target="_blank" rel="noopener noreferrer">𝕏</a>
+                        <a href="https://youtube.com" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">youtube_activity</span></a>
+                        <a href="https://discord.com" class="social-icon" aria-label="Discord" target="_blank" rel="noopener noreferrer">💬</a>
+                    </div>
+                </div>
+
+                <!-- Empty Column (for grid balance) -->
+                <div class="footer-column">
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#corporate">Corporate</a>
+                    <a href="legal.html">Legal</a>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-locations">
+                        <span>Scoria Studios</span>
+                    </div>
+                    <div class="footer-copyright">
+                        2025
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/featuredGames.js"></script>
+    <script src="assets/js/legal.js"></script>
+</body>
+</html>

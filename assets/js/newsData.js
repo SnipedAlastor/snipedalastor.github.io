@@ -6,7 +6,7 @@ const newsData = [
         category: "Afloaters",
         title: "Afloaters in Development!",
         image: "assets/images/news/afloaters.png",
-        date: "November 11, 2025",
+        date: "November 17, 2025",
         link: "news/barotraumatic-development.html"
     }
 ];
