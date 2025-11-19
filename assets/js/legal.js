@@ -10,15 +10,12 @@ function initLegalSections() {
             // Toggle current section
             section.classList.toggle('open');
             
-            // Optional: Close other sections (accordion style)
-            // Uncomment below if you want only one section open at a time
-            /*
             sections.forEach(otherSection => {
                 if (otherSection !== section) {
                     otherSection.classList.remove('open');
                 }
             });
-            */
+            
         });
     });
 }

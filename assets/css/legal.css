@@ -2,7 +2,7 @@
 .legal-page {
     background: #000;
     min-height: 100vh;
-    padding-top: 100px; /* Space for fixed navbar */
+    padding-top: 100px;
     padding-bottom: 80px;
 }
 
@@ -79,7 +79,7 @@
     transform: rotate(180deg);
 }
 
-/* Section Content (Expandable) */
+/* Section Content */
 .legal-section-content {
     max-height: 0;
     overflow: hidden;
@@ -88,7 +88,7 @@
 }
 
 .legal-section.open .legal-section-content {
-    max-height: 5000px; /* Large enough for content */
+    max-height: 5000px;
     padding: 0 30px 30px 30px;
 }
 
@@ -194,7 +194,7 @@
     margin-bottom: 0;
 }
 
-/* Table of Contents (Optional) */
+/* Table of Contents */
 .legal-toc {
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
