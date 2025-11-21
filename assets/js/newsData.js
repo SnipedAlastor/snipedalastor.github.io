@@ -2,12 +2,12 @@
 const newsData = [
     {
         id: 1,
-        game: "Afloaters",
+        title: "Afloaters in Development",
         category: "Afloaters",
-        title: "Afloaters in Development!",
-        image: "assets/images/news/afloaters.png",
-        date: "November 17, 2025",
-        link: "news/barotraumatic-development.html"
+        date: "Novemeber 17, 2025",
+        image: "assets/images/featuredGames/afloaters.png",
+        articleUrl: "news/news-afloaters_in_development.html",
+        link: "news/news-afloaters_in_development.html"
     }
 ];
 

@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/newswire.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=youtube_activity" />
 </head>
 <body>
-
+    
     <!-- Navigation bar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -86,66 +86,23 @@
         </div>
     </div>
 
-    <!-- Contact Us Section -->
-    <section class="contact-section">
-        <div class="contact-container">
-            <h1 class="contact-title">Contact Us</h1>
-            
-            <div class="contact-content">
-                <p class="contact-intro">
-                    To provide specific feedback for Game Alpha or Game Beta please visit the following links:
-                </p>
+    <!-- Newswire Section -->
+    <section class="newswire-section">
+        <div class="newswire-container">
+            <!-- Hero News (Latest) -->
+            <div id="newsHero">
+                <div class="loading">Loading latest news...</div>
+            </div>
 
-                <!-- Game Alpha Feedback -->
-                <div class="contact-item">
-                    <span class="contact-item-title">Game Alpha Feedback:</span>
-                    <a href="https://www.scoriastudios.com/game-alpha/feedback" class="contact-item-link">
-                        https://www.scoriastudios.com/game-alpha/feedback
-                    </a>
-                </div>
+            <!-- News Grid -->
+            <div class="news-grid" id="newsGrid">
+                <!-- News cards will be loaded here dynamically -->
+            </div>
 
-                <!-- Game Beta Feedback -->
-                <div class="contact-item">
-                    <span class="contact-item-title">Game Beta Feedback:</span>
-                    <a href="https://www.scoriastudios.com/game-beta/feedback" class="contact-item-link">
-                        https://www.scoriastudios.com/game-beta/feedback
-                    </a>
-                </div>
-
-                <!-- Technical Support -->
-                <div class="contact-item">
-                    <span class="contact-item-title">If you have a technical issue that you'd like to report:</span>
-                    <a href="https://support.scoriastudios.com/" class="contact-item-link">
-                        https://support.scoriastudios.com/
-                    </a>
-                </div>
-
-                <!-- Career Opportunities -->
-                <div class="contact-item">
-                    <span class="contact-item-title">For any questions related to career opportunities at Scoria Studios:</span>
-                    <a href="https://www.scoriastudios.com/careers/" class="contact-item-link">
-                        https://www.scoriastudios.com/careers/
-                    </a>
-                </div>
-
-                <!-- Legal Enquiries -->
-                <div class="contact-item">
-                    <span class="contact-item-title">For any other legal enquiries, please reach out to:</span>
-                    <a href="mailto:legal@scoriastudios.com" class="contact-email">
-                        legal@scoriastudios.com
-                    </a>
-                </div>
-
-                <!-- Social Media Section -->
-                <div class="contact-social-section">
-                    <span class="contact-social-title">And to stay up to date on all of the latest news for Scoria Studios:</span>
-                    <div class="contact-social-links">
-                        <a href="https://www.scoriastudios.com/" class="contact-social-link">https://www.scoriastudios.com/</a>
-                        <a href="https://twitter.com/ScoriaStudios" class="contact-social-link">https://twitter.com/ScoriaStudios</a>
-                        <a href="https://www.instagram.com/scoriastudios/" class="contact-social-link">https://www.instagram.com/scoriastudios/</a>
-                        <a href="https://www.facebook.com/scoriastudios" class="contact-social-link">https://www.facebook.com/scoriastudios</a>
-                    </div>
-                </div>
+            <!-- Load More Button -->
+            <div class="news-load-more">
+                <button class="btn-load-more" id="loadMoreBtn">More Stories</button>
+                <p class="no-more-news" id="noMoreNews">You've reached the end of the news feed.</p>
             </div>
         </div>
     </section>
@@ -220,6 +177,8 @@
     <!-- Scripts -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/featuredGames.js"></script>
-    
+    <script src="assets/js/newswire.js"></script>
+    <script src="assets/js/newsData.js"></script>
+
 </body>
 </html>
